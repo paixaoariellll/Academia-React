@@ -6,6 +6,7 @@ import image3 from "../../assets/image3.png";
 import image4 from "../../assets/image4.png";
 import nb from "../../assets/nb.png";
 import nike from "../../assets/nike.png";
+import adidas from "../../assets/adidas.png";
 import tick from "../../assets/tick.png";
 
 const Reasons = () => {
@@ -53,9 +54,9 @@ const Reasons = () => {
         </span>
 
         <div className="partners">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <img src={nb} alt="" />
+          <img src={adidas} alt="" />
+          <img src={nike} alt="" />
         </div>
       </div>
     </div>
