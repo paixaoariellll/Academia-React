@@ -1,0 +1,42 @@
+.Footer-container {
+    position: relative;
+}
+
+.Footer-container>hr {
+    border: 1px solid var(--lightgray)
+}
+
+.footer {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 4rem;
+}
+
+.social-links>img {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.logo-f>img {
+    width: 20rem;
+}
+
+.auth {
+    color: white;
+    gap: 0.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 12px;
+    cursor: pointer;
+}
