@@ -25,6 +25,8 @@ const Footer = () => {
           <a src="https://www.ariel-paixao.vercel.app">Ariel Paixão</a>
         </span>
       </div>
+      <div className="blur blur-f-1"></div>
+      <div className="blur blur-f-2"></div>
     </div>
   );
 };

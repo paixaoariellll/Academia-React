@@ -7,7 +7,7 @@
   --darkGrey: #465348;
   --caloryCard: #656565;
   --planCard: linear-gradient(210.41deg, rgba(10, 66, 22, 0.774) 1.14%, #181d18 100.75%);
-  --appColor: #040419;
+  --appColor: rgb(0, 0, 0);
   --black: #212121;
 }
 
@@ -48,4 +48,12 @@
 .btn:hover {
   transform: scale(1.25);
   cursor: pointer;
+}
+
+.blur {
+  background: rgba(8, 76, 12, 0.797);
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(150px);
+  z-index: -9;
 }

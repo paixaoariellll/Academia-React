@@ -1,14 +1,16 @@
-import React from "react"
-import { Header } from "../Header/Header"
-import "./Hero.css"
-import hero_image from "../../assets/hero_image.png"
-import hero_image_back from "../../assets/hero_image_back.png"
-import Heart from "../../assets/heart.png"
-import Calories from "../../assets/calories.png"
+import React from "react";
+import { Header } from "../Header/Header";
+import "./Hero.css";
+import hero_image from "../../assets/hero_image.png";
+import hero_image_back from "../../assets/hero_image_back.png";
+import Heart from "../../assets/heart.png";
+import Calories from "../../assets/calories.png";
 
 const Hero = () => {
   return (
     <div className="hero">
+      <div className="blur hero-blur"></div>
+
       <div className="left-h">
         <Header />
         {/* The best ad */}
@@ -82,7 +84,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
