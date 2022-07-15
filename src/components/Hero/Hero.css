@@ -15,7 +15,7 @@
 .right-h {
     flex: 1;
     position: relative;
-    background-color: var(--orange);
+    background-color: var(--green);
 
 }
 
@@ -39,7 +39,7 @@
 
 .the-best-ad>div {
     position: absolute;
-    background-color: var(--orange);
+    background-color: var(--green);
     width: 4.5rem;
     height: 80%;
     left: 8px;
@@ -93,7 +93,7 @@
 
 .hero-buttons>:nth-child(1) {
     color: white;
-    background-color: var(--orange);
+    background-color: var(--green);
     width: 8rem;
 }
 
@@ -101,7 +101,7 @@
     color: white;
     background-color: transparent;
     width: 8rem;
-    border: 2px solid var(--orange);
+    border: 2px solid var(--green);
 }
 
 .right-h>.btn {

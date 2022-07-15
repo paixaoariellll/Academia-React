@@ -1,12 +1,14 @@
 /* make variables */
 :root {
   --lightgray: #D9D9D9;
+  --green: rgba(10, 66, 22, 0.774);
   --gray: #9c9c9c;
   --orange: #f48915;
-  --darkGrey: #464D53;
+  --darkGrey: #465348;
   --caloryCard: #656565;
-  --planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+  --planCard: linear-gradient(210.41deg, rgba(10, 66, 22, 0.774) 1.14%, #181d18 100.75%);
   --appColor: #3c3f45;
+  --black: #212121;
 }
 
 .App {

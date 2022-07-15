@@ -2,7 +2,7 @@ import './App.css';
 import Hero from './components/Hero/Hero';
 import Programs from './components/Programs/Programs';
 import Reasons from './components/Reasons/Reasons';
-import { programsData } from './data/programsData'
+import { programsData } from './data/programsData';
 
 function App() {
   return (
