@@ -3,7 +3,9 @@ import Hero from './components/Hero/Hero';
 import Plans from './components/Plans/Plans';
 import Programs from './components/Programs/Programs';
 import Reasons from './components/Reasons/Reasons';
+import Testimonials from './assets/Testimonials/Testimonials';
 import { programsData } from './data/programsData';
+import Join from './components/Join/Join';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <Programs />
       <Reasons />
       <Plans />
+      <Testimonials />
+      <Join />
     </div>
   );
 }
