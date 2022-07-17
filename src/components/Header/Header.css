@@ -17,14 +17,16 @@
     list-style: none;
     display: flex;
     gap: 2rem;
-    color: white;
+    color: lightsalmon;
 }
 
 .header-menu>li {
     cursor: pointer;
+    transition: 240ms ease-in-out;
 }
 
 .header-menu>li:hover {
-    color: var(--green);
+    color: var(--orange);
+    scale: 1.5;
     cursor: pointer;
 }

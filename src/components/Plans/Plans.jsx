@@ -2,12 +2,29 @@ import React from "react";
 import "./Plans.css";
 import { plansData } from "../../data/plansData";
 import whiteTick from "../../assets/whiteTick.png";
+import { motion } from "framer-motion";
 
 const Plans = () => {
+  const transition = { type: "spring", duration: 3 };
+
   return (
     <div className="plans-container">
-      <div className="blur plans-blur-1"></div>
-      <div className="blur plans-blur-2"></div>
+      <motion.div
+        initial={{ opacity: 0, x: -120 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -120 }}
+        whileInView={{ left: "30rem" }}
+        transition={{ ...transition, duration: 5 }}
+        className="blur plans-blur-1"
+      ></motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: 120 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: 120 }}
+        whileInView={{ right: "30rem" }}
+        transition={{ ...transition, duration: 5 }}
+        className="blur plans-blur-2"
+      ></motion.div>
 
       <div className="programs-header">
         <span className="stroke-text">Read to Start</span>

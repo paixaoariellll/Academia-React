@@ -15,7 +15,7 @@
 .right-h {
     flex: 1;
     position: relative;
-    background-color: var(--green);
+    background-color: transparent;
 
 }
 
@@ -26,7 +26,7 @@
     width: fit-content;
     padding: 20px 13px;
     text-transform: uppercase;
-    color: white;
+    color: var(--lightgray);
     position: relative;
     display: flex;
     align-items: center;
@@ -53,7 +53,7 @@
     text-transform: uppercase;
     font-size: 4.5rem;
     font-weight: bold;
-    color: white;
+    color: var(--lightgray);
     text-overflow: inherit;
 }
 
@@ -76,12 +76,12 @@
 }
 
 .figures>div>span:nth-of-type(1) {
-    color: white;
+    color: var(--lightgray);
     font-size: 2rem;
 }
 
 .figures>div>span:nth-of-type(2) {
-    color: var(--gray);
+    color: var(--lightgray);
     text-transform: uppercase;
 }
 
@@ -92,13 +92,13 @@
 }
 
 .hero-buttons>:nth-child(1) {
-    color: white;
+    color: var(--lightgray);
     background-color: var(--green);
     width: 8rem;
 }
 
 .hero-buttons>:nth-child(2) {
-    color: white;
+    color: var(--lightgray);
     background-color: transparent;
     width: 8rem;
     border: 2px solid var(--green);
@@ -130,11 +130,11 @@
 }
 
 .heart-rate>:nth-child(2) {
-    color: var(--gray);
+    color: var(--lightgray);
 }
 
 .heart-rate>:nth-child(3) {
-    color: white;
+    color: var(--lightgray);
     font-size: 1.5rem;
 }
 
@@ -157,7 +157,7 @@
 .calories {
     display: flex;
     gap: 2rem;
-    background-color: var(--caloryCard);
+    background-color: var(--darkGrey);
     border-radius: 5px;
     padding: 1rem;
     width: fit-content;
@@ -179,11 +179,11 @@
 }
 
 .calories>div>:nth-child(1) {
-    color: var(--gray);
+    color: var(--lightgray);
 }
 
 .calories>div>:nth-child(2) {
-    color: white;
+    color: var(--lightgray);
     font-size: 2rem;
 }
 

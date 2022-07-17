@@ -10,11 +10,11 @@
     gap: 2rem;
     flex-direction: column;
     text-transform: uppercase;
-    color: white;
+    color: var(--lightgray);
 }
 
 .left-t>:nth-child(1) {
-    color: var(--green);
+    color: var(--lightgray);
 }
 
 .left-t>:nth-child(2),

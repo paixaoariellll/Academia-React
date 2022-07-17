@@ -24,7 +24,7 @@
 .category {
     display: FLex;
     flex-direction: column;
-    background-color: gray;
+    background-color: var(--darkGrey);
     padding: 2rem;
     margin: 2rem;
     gap: 1rem;
