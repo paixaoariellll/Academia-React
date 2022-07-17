@@ -11,7 +11,7 @@ import { type } from "@testing-library/user-event/dist/type";
 const Hero = () => {
   const trasnsition = {
     type: "tween",
-    duration: 1,
+    duration: 2.3,
     stiffness: 20,
   };
   const stars = {
@@ -28,7 +28,7 @@ const Hero = () => {
         className="blur hero-blur"
         initial={{ opacity: 0.5, left: "100px" }}
         animate={{ opacity: 1 }}
-        transition={{ ...stars, duration: 5 }}
+        transition={{ ...stars, duration: 3 }}
         whileInView={{ left: "70rem", top: "15rem" }}
         exit={{ opacity: 0 }}
       ></motion.div>
@@ -105,14 +105,21 @@ const Hero = () => {
         </motion.div>
 
         {/* hero images */}
-        <motion.img src={hero_image} alt="hero_image" className="hero-image" />
         <motion.img
-          initial={{ right: "11rem" }}
-          whileInView={{ right: "20rem" }}
+          initial={{ right: "-20rem" }}
+          whileInView={{ right: "10rem" }}
+          transition={trasnsition}
+          src={hero_image}
+          alt="hero_image"
+          className="hero-image"
+        />
+        <motion.img
+          initial={{ right: "15rem" }}
+          whileInView={{ right: "25rem" }}
           transition={trasnsition}
           src={hero_image_back}
           alt="hero_image_back"
-          className="hero-image_back"
+          className="hero-image-back"
         />
 
         {/* Calories */}

@@ -50,11 +50,11 @@
 
 .right-r>span {
     font-weight: bold;
-    color: var(--green);
+    color: var(--lightgray);
 }
 
 .right-r>div {
-    color: white;
+    color: var(--lightgray);
     font-size: 3rem;
     font-weight: bold;
 }
