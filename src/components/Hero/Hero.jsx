@@ -30,7 +30,10 @@ const Hero = () => {
         initial={{ opacity: 0.5, left: mobile ? "178px" : "238px" }}
         animate={{ opacity: 1, left: mobile ? "0px" : "178px" }}
         transition={{ ...stars, duration: 10 }}
-        whileInView={{ left: "70rem", top: "15rem" }}
+        whileInView={{
+          left: mobile ? "0px" : "70px",
+          top: mobile ? "0px" : "15rem",
+        }}
         exit={{ opacity: 0 }}
       ></motion.div>
 

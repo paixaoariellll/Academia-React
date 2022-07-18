@@ -198,8 +198,9 @@
         flex-direction: column;
     }
 
-    .hero-blu {
+    .hero-blur {
         width: 14rem;
+        left: 0;
     }
 
     .the-best-ad {
