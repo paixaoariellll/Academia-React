@@ -7,6 +7,7 @@ import Heart from "../../assets/heart.png";
 import Calories from "../../assets/calories.png";
 import { motion } from "framer-motion";
 import { type } from "@testing-library/user-event/dist/type";
+import NumberCounter from "number-counter";
 
 const Hero = () => {
   const trasnsition = {
@@ -16,19 +17,19 @@ const Hero = () => {
   };
   const stars = {
     type: "spring",
-    duration: 5,
-    stiffness: 20,
+    duration: 10,
     whileInView: "visible",
     visualViewport: { once: true },
   };
+  const mobile = window.innerWidth < 768 ? true : false;
 
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       <motion.div
         className="blur hero-blur"
-        initial={{ opacity: 0.5, left: "100px" }}
-        animate={{ opacity: 1 }}
-        transition={{ ...stars, duration: 3 }}
+        initial={{ opacity: 0.5, left: mobile ? "178px" : "238px" }}
+        animate={{ opacity: 1, left: mobile ? "0px" : "178px" }}
+        transition={{ ...stars, duration: 10 }}
         whileInView={{ left: "70rem", top: "15rem" }}
         exit={{ opacity: 0 }}
       ></motion.div>
@@ -38,7 +39,7 @@ const Hero = () => {
         {/* The best ad */}
         <div className="the-best-ad">
           <motion.div
-            initial={{ opacity: 0.5, left: "238px" }}
+            initial={{ opacity: 0.5, left: mobile ? "178px" : "238px" }}
             animate={{ x: 15, opacity: 1 }}
             transition={{
               ...trasnsition,
@@ -71,15 +72,21 @@ const Hero = () => {
         {/* figures */}
         <div className="figures">
           <div>
-            <span>+140</span>
+            <span>
+              <NumberCounter end={140} start={60} delay="5" preFix="+" />
+            </span>
             <span>Expert coachs</span>
           </div>
           <div>
-            <span>+978</span>
+            <span>
+              <NumberCounter end={978} start={900} delay="5" preFix="+" />
+            </span>
             <span>Members joined</span>
           </div>
           <div>
-            <span>+50</span>
+            <span>
+              <NumberCounter end={50} start={0} delay="5" preFix="+" />
+            </span>
             <span>Fitness programs</span>
           </div>
         </div>
